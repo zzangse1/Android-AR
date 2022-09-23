@@ -1,0 +1,269 @@
+@startuml
+class com.example.licenta.fragments.HomeFragment {
+- Button btnFavoritesAR
+- ImageView goToBeds
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+class com.example.licenta.screen.SplashScreen {
+# void onCreate(Bundle)
+}
+class com.example.licenta.fragments.FavoritesFragment {
+- DatabaseHelper favoriteDbHelper
+- ListView listView
+- ArrayList<items> item
+- favoritesItemsAdapter myAdapter
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+class com.example.licenta.adapter.items {
+- String lName
+- int lPrice
+- String lDetails
+- int lImageId
+- int lImageId1
+- int lImageId2
+- String lPayment
+- String lModel
+- int lQuantity
++ String getlName()
++ int getlPrice()
++ int getQuantity()
++ void setQuantity(int)
++ int getlImageId()
++ String getlDetails()
++ String getlModel()
++ int getlImageId1()
++ int getlImageId2()
++ String getlPayment()
++ void setlName(String)
++ void setlImageId(int)
++ void setlDetails(String)
++ void setlPrice(int)
++ void setlModel(String)
++ void setlImageId1(int)
++ void setlImageId2(int)
++ void setlPayment(String)
+}
+class com.example.licenta.adapter.cartItemRecyclerView {
+- DatabaseHelper db
+- Details details
+- ArrayList<items> itemsList
+- Context context
++ ViewHolder onCreateViewHolder(ViewGroup,int)
++ void onBindViewHolder(ViewHolder,int)
++ int getItemCount()
+}
+interface com.example.licenta.adapter.cartItemRecyclerView.IImageButtonListener {
+~ void onImageButtonClick(View,int)
+}
+class com.example.licenta.adapter.cartItemRecyclerView.ViewHolder {
++ TextView nameC
++ ImageView iconC
+~ IImageButtonListener listener
++ Button removeItem
++ void setListener(IImageButtonListener)
+}
+class com.example.licenta.AR.favoritesAr {
+- DatabaseHelper favoriteDbHelper
+- ArrayList<items> item
+- ListView listView
+- favoritesItemsAdapterForArCamera myAdapter
+- ArFragment arFragment
++ Uri modelSelected
+# void onCreate(Bundle)
+- void renderModel(Anchor)
+- void placeModel(ModelRenderable,Anchor)
+}
+class com.example.licenta.fragments.StoreFragment {
+- Button btnCategoryBeds
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+class com.example.licenta.category.DeskCategory {
+- String deskDescription
+# void onCreate(Bundle)
+}
+class com.example.licenta.adapter.favoritesItemsAdapterForArCamera {
+- ArrayList<items> itemsList
+- Context context
++ int getCount()
++ Object getItem(int)
++ long getItemId(int)
++ View getView(int,View,ViewGroup)
+}
+class com.example.licenta.adapter.favoritesItemsAdapterForArCamera.ViewHolder {
++ ImageView imageView
+}
+class com.example.licenta.adapter.favoritesItemsAdapter {
+- ArrayList<items> itemsList
+- Context context
++ int getCount()
++ Object getItem(int)
++ long getItemId(int)
++ View getView(int,View,ViewGroup)
+}
+class com.example.licenta.adapter.favoritesItemsAdapter.ViewHolder {
++ ImageView imageView
++ TextView name
+}
+class com.example.licenta.SQLite.DatabaseHelper {
++ {static} String DATABASE_NAME
++ {static} String TABLE_NAME_FAVORITES
++ {static} String TABLE_NAME_CART
++ {static} String TABLE_NAME_MY_ORDERS
++ {static} String COL_1
++ {static} String COL_2
++ {static} String COL_3
++ {static} String COL_4
++ {static} String COL_5
++ {static} String COL_6
++ {static} String COL_7
++ {static} String COL_8
++ {static} String COL_9
+- {static} DatabaseHelper sDatabaseHelper
++ {static} DatabaseHelper getInstance(Context)
++ void onCreate(SQLiteDatabase)
++ void onUpgrade(SQLiteDatabase,int,int)
++ boolean insertMyOrders(items)
++ boolean insertData(items)
++ boolean insertDataCart(items)
++ ArrayList<items> getAllDataMyOrders()
++ ArrayList<items> getAllData()
++ ArrayList<items> getAllDataCart()
++ void deleteFavorite(int)
++ void deleteCart(int)
++ void updateDataCard(int,int)
++ int sumPriceCartItems()
+}
+class com.example.licenta.category.BedsCategory {
+- String bedDescription
+# void onCreate(Bundle)
+}
+class com.example.licenta.MainActivity {
+- AppBarConfiguration mAppBarConfiguration
+- DrawerLayout drawer
+- NavigationView navigationView
+- Toolbar toolbar
+- View view
+# void onCreate(Bundle)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onSupportNavigateUp()
++ void cart_go_to_activity_onClick(MenuItem)
+}
+class com.example.licenta.DetailsDialog {
+- Button decrease
+- TextView quantity
+- int inQuant
+- DatabaseHelper myDb
+- SQLiteDatabase mDb
+- items i
++ Dialog onCreateDialog(Bundle)
+}
+class com.example.licenta.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
++ {static} String FLAVOR
++ {static} int VERSION_CODE
++ {static} String VERSION_NAME
+}
+class com.example.licenta.category.ChairsCategory {
+# void onCreate(Bundle)
+}
+class com.example.licenta.ExampleUnitTest {
++ void addition_isCorrect()
+}
+class com.example.licenta.adapter.itemsAdapter {
++ View getView(int,View,ViewGroup)
+}
+class com.example.licenta.category.DrawersCategory {
+- String drawersCategory
+# void onCreate(Bundle)
+}
+class com.example.licenta.AR.CameraAr {
+- ArFragment arFragment
++ Uri modelSelected
+# void onCreate(Bundle)
+- void modelS()
+- void renderModel(Anchor)
+- void placeModel(ModelRenderable,Anchor)
+}
+class com.example.licenta.adapter.ordersAdapter {
+- ArrayList<items> itemsList
+- Context context
++ int getCount()
++ Object getItem(int)
++ long getItemId(int)
++ View getView(int,View,ViewGroup)
+}
+class com.example.licenta.adapter.ordersAdapter.ViewHolder {
++ TextView payment
+}
+class com.example.licenta.fragments.OrdersFragment {
+- DatabaseHelper dbHelper
+- ListView listView
+- ArrayList<items> item
+- ordersAdapter ordersAdapter
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
+}
+class com.example.licenta.category.ArmmchairsCategory {
+# void onCreate(Bundle)
+}
+class com.example.licenta.category.TablesCategory {
+- String tablesDescription
+# void onCreate(Bundle)
+}
+class com.example.licenta.Details {
+- DatabaseHelper myDb
+- SQLiteDatabase mDb
+- ImageView image
+- TextView name
+- Button arBtn
+- MaterialFavoriteButton favoritesBtn
+- items i
+# void onCreate(Bundle)
++ boolean Exists(String)
+}
+class com.example.licenta.cart {
+- DatabaseHelper dbHelper
+- ArrayList<items> item
+- cartItemRecyclerView cartItemRecyclerView
+- RecyclerView recyclerView
+- SwipeRefreshLayout swipeRefreshLayout
+- TextView showTotalSum
+- Button checkoutBtn
+# void onCreate(Bundle)
+}
+class com.example.licenta.ExampleInstrumentedTest {
++ void useAppContext()
+}
+
+
+androidx.fragment.app.Fragment <|-- com.example.licenta.fragments.HomeFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.screen.SplashScreen
+androidx.fragment.app.Fragment <|-- com.example.licenta.fragments.FavoritesFragment
+com.example.licenta.adapter.Adapter <|-- com.example.licenta.adapter.cartItemRecyclerView
+com.example.licenta.adapter.cartItemRecyclerView +.. com.example.licenta.adapter.cartItemRecyclerView.IImageButtonListener
+com.example.licenta.adapter.cartItemRecyclerView +.. com.example.licenta.adapter.cartItemRecyclerView.ViewHolder
+com.example.licenta.adapter.ViewHolder <|-- com.example.licenta.adapter.cartItemRecyclerView.ViewHolder
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.AR.favoritesAr
+androidx.fragment.app.Fragment <|-- com.example.licenta.fragments.StoreFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.DeskCategory
+android.widget.BaseAdapter <|-- com.example.licenta.adapter.favoritesItemsAdapterForArCamera
+com.example.licenta.adapter.favoritesItemsAdapterForArCamera +.. com.example.licenta.adapter.favoritesItemsAdapterForArCamera.ViewHolder
+android.widget.BaseAdapter <|-- com.example.licenta.adapter.favoritesItemsAdapter
+com.example.licenta.adapter.favoritesItemsAdapter +.. com.example.licenta.adapter.favoritesItemsAdapter.ViewHolder
+android.database.sqlite.SQLiteOpenHelper <|-- com.example.licenta.SQLite.DatabaseHelper
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.BedsCategory
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.MainActivity
+androidx.appcompat.app.AppCompatDialogFragment <|-- com.example.licenta.DetailsDialog
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.ChairsCategory
+android.widget.ArrayAdapter <|-- com.example.licenta.adapter.itemsAdapter
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.DrawersCategory
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.AR.CameraAr
+android.widget.BaseAdapter <|-- com.example.licenta.adapter.ordersAdapter
+com.example.licenta.adapter.ordersAdapter +.. com.example.licenta.adapter.ordersAdapter.ViewHolder
+androidx.fragment.app.Fragment <|-- com.example.licenta.fragments.OrdersFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.ArmmchairsCategory
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.category.TablesCategory
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.Details
+androidx.appcompat.app.AppCompatActivity <|-- com.example.licenta.cart
+@enduml

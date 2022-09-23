@@ -1,0 +1,100 @@
+{
+  animations: [
+    {
+      path: 'sampledata/beds/bed2.fbx.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'saso',
+      parameters: [
+        {
+          baseColor: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'top wood',
+      parameters: [
+        {
+          baseColor: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/beds/bed2.fbx.fbx',
+    name: 'bed2.fbx',
+    recenter: 'root',
+    scale: 0.68961099999999997,
+  },
+  version: '0.54:2',
+}

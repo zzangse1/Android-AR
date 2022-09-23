@@ -1,0 +1,112 @@
+{
+  animations: [
+    {
+      path: 'sampledata/beds/bed3.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Mat.1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'wood-texture',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Mat.2',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Tissus 20',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/beds/bed3.fbx',
+    name: 'bed3',
+    recenter: 'root',
+    scale: 0.047407999999999999,
+  },
+  samplers: [
+    {
+      file: 'sampledata/beds\\bed3.fbm\\wood-texture.jpg',
+      name: 'wood-texture',
+      pipeline_name: 'bed3.fbm\\wood-texture.jpg',
+    },
+    {
+      file: 'sampledata/beds\\bed3.fbm\\Tissus 20.jpg',
+      name: 'Tissus 20',
+      pipeline_name: 'bed3.fbm\\Tissus 20.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

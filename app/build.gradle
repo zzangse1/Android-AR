@@ -1,0 +1,216 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 29
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.licenta"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // favorites button
+    implementation 'com.github.ivbaranov:materialfavoritebutton:0.1.4'
+
+    // sceneform
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+
+    // recyclerview
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    // cardview
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // navigation drawer
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:27.0.2'
+
+    implementation 'com.nex3z:notification-badge:1.0.2'
+
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+
+}
+
+
+sceneform.asset('sampledata/armchairs/armchair1.FBX',
+        'default',
+        'sampledata/armchairs/armchair1.sfa',
+        'src/main/assets/armchair1')
+
+sceneform.asset('sampledata/armchairs/armchair2.fbx',
+        'default',
+        'sampledata/armchairs/armchair2.sfa',
+        'src/main/assets/armchair2')
+
+sceneform.asset('sampledata/armchairs/armchair3.fbx',
+        'default',
+        'sampledata/armchairs/armchair3.sfa',
+        'src/main/assets/armchair3')
+
+sceneform.asset('sampledata/armchairs/armchair5.obj',
+        'default',
+        'sampledata/armchairs/armchair5.sfa',
+        'src/main/assets/armchair5')
+
+sceneform.asset('sampledata/beds/bed1.fbx',
+        'default',
+        'sampledata/beds/bed1.sfa',
+        'src/main/assets/bed1')
+
+sceneform.asset('sampledata/beds/bed2.fbx.fbx',
+        'default',
+        'sampledata/beds/bed2.fbx.sfa',
+        'src/main/assets/bed2.fbx')
+
+sceneform.asset('sampledata/beds/bed3.fbx',
+        'default',
+        'sampledata/beds/bed3.sfa',
+        'src/main/assets/bed3')
+
+sceneform.asset('sampledata/beds/bed4.fbx',
+        'default',
+        'sampledata/beds/bed4.sfa',
+        'src/main/assets/bed4')
+
+sceneform.asset('sampledata/beds/bed5.fbx',
+        'default',
+        'sampledata/beds/bed5.sfa',
+        'src/main/assets/bed5')
+
+sceneform.asset('sampledata/chairs/chair1.fbx',
+        'default',
+        'sampledata/chairs/chair1.sfa',
+        'src/main/assets/chair1')
+
+sceneform.asset('sampledata/chairs/chair2.fbx',
+        'default',
+        'sampledata/chairs/chair2.sfa',
+        'src/main/assets/chair2')
+
+sceneform.asset('sampledata/chairs/chair3.fbx',
+        'default',
+        'sampledata/chairs/chair3.sfa',
+        'src/main/assets/chair3')
+
+sceneform.asset('sampledata/chairs/chair4.fbx',
+        'default',
+        'sampledata/chairs/chair4.sfa',
+        'src/main/assets/chair4')
+
+sceneform.asset('sampledata/chairs/chair5.fbx',
+        'default',
+        'sampledata/chairs/chair5.sfa',
+        'src/main/assets/chair5')
+
+sceneform.asset('sampledata/desks/desk1.fbx',
+        'default',
+        'sampledata/desks/desk1.sfa',
+        'src/main/assets/desk1')
+
+sceneform.asset('sampledata/desks/desk2.fbx',
+        'default',
+        'sampledata/desks/desk2.sfa',
+        'src/main/assets/desk2')
+
+sceneform.asset('sampledata/desks/desk4.fbx',
+        'default',
+        'sampledata/desks/desk4.sfa',
+        'src/main/assets/desk4')
+
+sceneform.asset('sampledata/desks/desk5.fbx',
+        'default',
+        'sampledata/desks/desk5.sfa',
+        'src/main/assets/desk5')
+
+sceneform.asset('sampledata/drawers/drawer1.fbx',
+        'default',
+        'sampledata/drawers/drawer1.sfa',
+        'src/main/assets/drawer1')
+
+sceneform.asset('sampledata/drawers/drawer2.fbx',
+        'default',
+        'sampledata/drawers/drawer2.sfa',
+        'src/main/assets/drawer2')
+
+sceneform.asset('sampledata/drawers/drawer3.fbx',
+        'default',
+        'sampledata/drawers/drawer3.sfa',
+        'src/main/assets/drawer3')
+
+sceneform.asset('sampledata/drawers/drawer4.fbx',
+        'default',
+        'sampledata/drawers/drawer4.sfa',
+        'src/main/assets/drawer4')
+
+sceneform.asset('sampledata/drawers/drawer5.fbx',
+        'default',
+        'sampledata/drawers/drawer5.sfa',
+        'src/main/assets/drawer5')
+
+sceneform.asset('sampledata/tables/table2.fbx',
+        'default',
+        'sampledata/tables/table2.sfa',
+        'src/main/assets/table2')
+
+sceneform.asset('sampledata/tables/table3.fbx',
+        'default',
+        'sampledata/tables/table3.sfa',
+        'src/main/assets/table3')
+
+sceneform.asset('sampledata/tables/table4.fbx',
+        'default',
+        'sampledata/tables/table4.sfa',
+        'src/main/assets/table4')
+
+sceneform.asset('sampledata/tables/table5.fbx',
+        'default',
+        'sampledata/tables/table5.sfa',
+        'src/main/assets/table5')
+
+sceneform.asset('sampledata/armchairs/armchair4.fbx',
+        'default',
+        'sampledata/armchairs/armchair4.sfa',
+        'src/main/assets/armchair4')
+
+sceneform.asset('sampledata/desks/desk3.fbx',
+        'default',
+        'sampledata/desks/desk3.sfa',
+        'src/main/assets/desk3')
+
+sceneform.asset('sampledata/tables/table1.FBX',
+        'default',
+        'sampledata/tables/table1.sfa',
+        'src/main/assets/table1')

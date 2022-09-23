@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorites_camera_ar_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AR.favoritesAr">
+
+    <fragment
+        android:id="@+id/ux_sceneform_favorites"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/favorites_camera_ar_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</FrameLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_home_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Category"
+        android:textColor="@color/DarkBlue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/armchair1" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/armchair3" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/armchair4" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/armchair5" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:id="@+id/fragment_home_armchairs_cateogry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart"
+
+                android:src="@drawable/shofa" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bed1" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bed2" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bed3" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bed4" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/bed5" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:id="@+id/fragment_home_beds_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/bed" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/drawer1" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/drawer2" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/drawer3" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/drawer4" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/drawer5" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/fragment_home_drawers_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/one" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chair1" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chair2" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chair3" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chair4" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/chair5" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:id="@+id/fragment_home_chairs_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/three" />
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/table1" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/table2" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/table3" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/table5" />
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:id="@+id/fragment_home_tables_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/two" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
